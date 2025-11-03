@@ -1,6 +1,0 @@
-ccxt
-pandas
-numpy
-ta
-requests
-flask
