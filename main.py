@@ -85,5 +85,6 @@ def run_bot():
         time.sleep(60)
 
 if __name__ == "__main__":
+    send_telegram("✅ Test message from Render bot — your connection works!")
     Thread(target=run_bot, daemon=True).start()
     app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 10000)))
