@@ -16,8 +16,8 @@ app = Flask(__name__)
 def health():
     return "Bot is running", 200
 
-TELEGRAM_TOKEN = os.environ.get("8421284091:AAHHbjOr42_XNmb3l6JzXQq4UnVt3ymebRM")
-CHAT_ID = os.environ.get("6243669766")
+TELEGRAM_TOKEN = os.environ.get("TELEGRAM_TOKEN")
+CHAT_ID = os.environ.get("CHAT_ID")
 
 if not TELEGRAM_TOKEN or not CHAT_ID:
     raise SystemExit("Missing TELEGRAM_TOKEN or CHAT_ID in environment")
